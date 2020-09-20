@@ -11,7 +11,8 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {PessoasComponent} from './pessoas/pessoas.component';
 import {LancamentosCadastroComponent} from './lancamentos-cadastro/lancamentos-cadastro.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
+import {CurrencyMaskModule} from "ng2-currency-mask";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {FormsModule} from "@angular/forms";
     BrowserAnimationsModule,
     SelectButtonModule,
     DropdownModule,
-    FormsModule
+    FormsModule,
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
