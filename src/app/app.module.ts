@@ -6,10 +6,12 @@ import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/components/table/table';
 import {ButtonModule} from 'primeng/button';
 import {TooltipModule} from 'primeng/primeng';
+import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LancamentosPesquisaComponent
   ],
   imports: [
     BrowserModule,
