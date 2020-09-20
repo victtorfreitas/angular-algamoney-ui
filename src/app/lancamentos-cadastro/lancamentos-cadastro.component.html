@@ -8,12 +8,12 @@
   <form>
     <div class="ui-g-6 ui-md-3 ui-fluid">
       <label for="vencimento">Vencimento</label>
-      <input type="text" id="vencimento" pInputText>
+      <p-calendar dateFormat="dd/mm/yy" showIcon="true" id="vencimento"></p-calendar>
     </div>
 
     <div class="ui-g-6 ui-md-3 ui-fluid">
       <label for="recebimento">Recebimento</label>
-      <input type="text" id="recebimento" pInputText>
+      <p-calendar id="recebimento" dateFormat="dd/mm/yy" showIcon="true"></p-calendar>
     </div>
 
     <div class="ui-g-12 ui-md-9 ui-fluid">
@@ -43,7 +43,7 @@
 
     <div class="ui-g-12">
       <button pButton label="Salvar" type="submit"></button>
-      <button pButton label="Novo" type="button" class="ui-button-info ml-2"></button>
+      <button pButton label="Novo" type="button" class="ui-button-success ml-2"></button>
       <a href="#" class="ml-2">Voltar para pesquisa</a>
     </div>
 

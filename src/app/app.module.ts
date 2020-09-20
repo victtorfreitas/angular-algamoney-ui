@@ -5,11 +5,12 @@ import {AppComponent} from './app.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/components/table/table';
 import {ButtonModule} from 'primeng/button';
-import {InputTextareaModule, TooltipModule} from 'primeng/primeng';
+import {CalendarModule, InputTextareaModule, TooltipModule} from 'primeng/primeng';
 import {LancamentosPesquisaComponent} from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {PessoasComponent} from './pessoas/pessoas.component';
 import {LancamentosCadastroComponent} from './lancamentos-cadastro/lancamentos-cadastro.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import {LancamentosCadastroComponent} from './lancamentos-cadastro/lancamentos-c
     ButtonModule,
     TableModule,
     TooltipModule,
-    InputTextareaModule
+    InputTextareaModule,
+    CalendarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
