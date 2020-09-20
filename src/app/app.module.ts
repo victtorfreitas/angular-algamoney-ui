@@ -5,12 +5,13 @@ import {AppComponent} from './app.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/components/table/table';
 import {ButtonModule} from 'primeng/button';
-import {CalendarModule, InputTextareaModule, SelectButtonModule, TooltipModule} from 'primeng/primeng';
+import {CalendarModule, DropdownModule, InputTextareaModule, SelectButtonModule, TooltipModule} from 'primeng/primeng';
 import {LancamentosPesquisaComponent} from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {PessoasComponent} from './pessoas/pessoas.component';
 import {LancamentosCadastroComponent} from './lancamentos-cadastro/lancamentos-cadastro.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     InputTextareaModule,
     CalendarModule,
     BrowserAnimationsModule,
-    SelectButtonModule
+    SelectButtonModule,
+    DropdownModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

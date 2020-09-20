@@ -7,7 +7,7 @@
 
   <form>
     <div class="ui-g-12">
-      <p-selectButton [options]="tipos" #tipo></p-selectButton>
+      <p-selectButton [options]="tipos" #tipo ></p-selectButton>
     </div>
     <div class="ui-g-6 ui-md-3 ui-fluid">
       <label for="vencimento">Vencimento</label>
@@ -31,12 +31,12 @@
 
     <div class="ui-g-12 ui-md-6 ui-fluid">
       <label for="categoria">Categoria</label>
-      <input type="text" id="categoria" pInputText>
+      <p-dropdown id="categoria" [options]="categorias" ></p-dropdown>
     </div>
 
     <div class="ui-g-12 ui-md-6 ui-fluid">
       <label for="pessoa">Pessoa</label>
-      <input type="text" id="pessoa" pInputText>
+      <p-dropdown id="pessoa" [options]="pessoas" filter="true" ></p-dropdown>
     </div>
 
     <div class="ui-g-12 ui-fluid">
