@@ -5,7 +5,7 @@ import {AppComponent} from './app.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/components/table/table';
 import {ButtonModule} from 'primeng/button';
-import {CalendarModule, InputTextareaModule, TooltipModule} from 'primeng/primeng';
+import {CalendarModule, InputTextareaModule, SelectButtonModule, TooltipModule} from 'primeng/primeng';
 import {LancamentosPesquisaComponent} from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {PessoasComponent} from './pessoas/pessoas.component';
@@ -28,7 +28,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     TooltipModule,
     InputTextareaModule,
     CalendarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SelectButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

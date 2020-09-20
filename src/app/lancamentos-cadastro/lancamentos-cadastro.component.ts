@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-lancamentos-cadastro',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lancamentos-cadastro.component.css']
 })
 export class LancamentosCadastroComponent implements OnInit {
+  tipos = [
+    {label: 'Receita', value: 'RECEITA'},
+    {label: 'Despesa', value: 'DESPESA'}
+  ];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  formataLabelRecebimentoOuPagamento(tipo: string) {
+    return tipo === 'RECEITA' ? 'Recebimento' : 'Pagamento';
+  }
 }
