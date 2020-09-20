@@ -9,15 +9,18 @@ import {MenuItem} from 'primeng/api';
 export class AppComponent implements OnInit {
 
   title = 'algamoney-ui';
-  items: MenuItem[];
+  lancamentos: any;
 
   ngOnInit() {
-    this.items = [
-      {label: 'Stats', icon: 'fa fa-fw fa-bar-chart'},
-      {label: 'Calendar', icon: 'fa fa-fw fa-calendar'},
-      {label: 'Documentation', icon: 'fa fa-fw fa-book'},
-      {label: 'Support', icon: 'fa fa-fw fa-support'},
-      {label: 'Social', icon: 'fa fa-fw fa-twitter'}
+    this.lancamentos = [
+      {
+        tipo: 'DESPESA', descricao: 'Compra de pão', dataVencimento: '30/06/2017',
+        dataPagamento: null, valor: 4.55, pessoa: 'Padaria do José'
+      },
+      {
+        tipo: 'RECEITA', descricao: 'Venda de software', dataVencimento: '10/06/2017',
+        dataPagamento: '09/06/2017', valor: 80000, pessoa: 'Atacado Brasil'
+      }
     ];
   }
 }
