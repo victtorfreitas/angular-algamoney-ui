@@ -8,19 +8,21 @@ import {ButtonModule} from 'primeng/button';
 import {CalendarModule, DropdownModule, InputTextareaModule, SelectButtonModule, TooltipModule} from 'primeng/primeng';
 import {LancamentosPesquisaComponent} from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import {NavbarComponent} from './navbar/navbar.component';
-import {PessoasComponent} from './pessoas/pessoas.component';
+import {PessoasPesquisaComponent} from './pessoas-pesquisa/pessoas-pesquisa.component';
 import {LancamentosCadastroComponent} from './lancamentos-cadastro/lancamentos-cadastro.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
-import {CurrencyMaskModule} from "ng2-currency-mask";
+import {CurrencyMaskModule} from 'ng2-currency-mask';
+import { PessoasCadastroComponent } from './pessoas-cadastro/pessoas-cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentosPesquisaComponent,
     NavbarComponent,
-    PessoasComponent,
-    LancamentosCadastroComponent
+    PessoasPesquisaComponent,
+    LancamentosCadastroComponent,
+    PessoasCadastroComponent
   ],
   imports: [
     BrowserModule,
